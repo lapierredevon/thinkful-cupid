@@ -143,13 +143,13 @@ footer p {
 } 
 
 /* -------  Media Query ------- */
-@media all and (min-width: 428px){
+@media all and (min-width: 480px){
   .logo {
     font-family: "Tangerine", cursive;
-    font-size: 46px;
+    font-size: 40px;
     color: #ecdbc9;
   }
-
+  
   form select, 
   form input {
     margin-bottom: 20px;
@@ -159,16 +159,21 @@ footer p {
   .group {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   main img {
     width: 100%;
   }
+  
 
   .input-form {
-    flex: 1 5 10px;
-    /* margin: 10px; */
+    flex: 1 5 0px;
     align-self: center;
+  }
+
+  .input-form h2{
+    font-size: 20px;
   }
 
 
@@ -223,115 +228,5 @@ h2 {
   text-align: center;
 }
   
-
 }
 
-@media all and (max-width:1023px) and (min-width:500px){
-  
-  .input-form {
-    flex: 1 5 1px;
-    margin: 10px;
-    align-self: center;
-  }
-
-  .join-double{
-    flex: 5 1; 
-    height: auto;
-  }
-
-  form {
-    border: 2px solid #6b1a22;
-    padding: 10px;
-    height: 155px;
-    font-size: 10px;  
-  }
-
-  .img{
-    height: 350px;
-  }
-  
-  form label {
-    font-weight: bold;
-    font-size:12px;
-  }
-  
-  /* for desktop display set width for input to 180 and for select to 188 */
-  form select,
-  form input {
-    margin-bottom: 10px;
-    width: 70px;
-  }
-  
-
-  form button {
-    background-color: #83092e;
-    border: none;
-    color: #fff;
-    font-size: 15px;
-    padding: 15px;
-    width: 100%;
-  }
-
-  h2 {
-    font-size: 13px;
-    font-weight: 400;
-    margin: 0 10px 15px 10px;
-    text-align: center;
-  }
-  .group {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .about-flex{
-    flex: 1 1;
-    margin: 10px;
-}
-
-.about-double{
-  flex: 2 1;
-  margin: 10px;
-}
-
-.download-app{
-  flex: 0 3 500px;
-  align-self:center;  
-  margin-right: 20px;
-}  
-
-.download-flex{
-  flex:0 3 500px;
-}
-
-p{
-  font-size: 10px;
-}
-
-li{
-  font-size: 10px;  
-}
-
-.nav-group {
-  flex: 1;
-   align-self: center;  
-}
-
-.group-2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;  
-}
-
-.nav-group {
-  flex: 1;
-   align-self: center;  
-}
-
-.group-2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;  
-}
-  
-}
